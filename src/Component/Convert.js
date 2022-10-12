@@ -10,10 +10,11 @@ const Convert = () => {
   const [convert, setConvert] = useState("");
 
   const gloable = () => {
+  
     if (start >= end) {
       setConvert(input / start);
     } else {
-      setConvert(input * start * end);
+      setConvert((input / start)* end);
     }
   };
 
